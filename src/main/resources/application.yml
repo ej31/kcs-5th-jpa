@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: kcs-5th-jpa
+  datasource:
+    url: jdbc:mysql://localhost:3306/jeff_db?useSSL=false&serverTimezone=UTC
+    username: jeff
+    password: 123123..
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update  # Production 수준에서는 이 옵션을 반!드!시! none으로 설정해야한다!
+server:
+  port: 8080
